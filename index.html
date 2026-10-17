@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
+ 
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+<a href="#home" class="logo">MyPortfolio</a>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>	<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="hero-content">
+<p class="tagline">WELCOME TO MY PORTFOLIO</p>
+<h1>Hello, I'm <span>Falguni Kawadkar</span></h1>
+<h2>BCA Student | Web Developer</h2>
+<p>
+I enjoy creating attractive, responsive and user-friendly websites using modern web technologies.
+</p>
+<a href="#projects" class="btn">View My Projects</a>
+<a href="#contact" class="btn btn-outline">Contact Me</a>
+</div>
+<div class="profile-circle">YN</div> <!--<img src="Photo.png">*/ -->
+</section>
+
+<section id="about" class="section">
+<h2>About Me</h2>
+<p class="section-text">
+I am a BCA student interested in web designing and development. I have knowledge of HTML, CSS, JavaScript, PHP and MySQL.
+I enjoy learning new technologies and developing practical projects.
+</p>
+</section>
+ 
+<section id="skills" class="section alternate">
+<h2>My Skills</h2>
+<div class="cards">
+<div class="card"><h3>HTML5</h3><p>Webpage structure</p></div>
+<div class="card"><h3>CSS3</h3><p>Styling and responsive design</p></div>
+<div class="card"><h3>JavaScript</h3><p>Website interactivity</p></div>
+<div class="card"><h3>PHP</h3><p>Server-side processing</p></div>
+<div class="card"><h3>MySQL</h3><p>Database fundamentals</p></div>
+<div class="card"><h3>Git & GitHub</h3><p>Version control</p></div>
+</div>
+</section>
+
+<section id="projects" class="section">
+<h2>My Projects</h2>
+<div class="cards">
+<div class="card project-card">
+<h3>FarmRent</h3>
+<p>A website concept for renting agricultural equipment to farmers.</p>	<span>HTML • CSS • JavaScript • PHP</span>
+</div>
+<div class="card project-card">
+<h3>Student Registration</h3>
+<p>A web application concept for collecting and processing student details.</p>
+<span>HTML • CSS • PHP • MySQL</span>
+</div>
+<div class="card project-card">
+<h3>Personal Portfolio</h3>
+<p>A responsive website to present my skills, projects and contact details.</p>
+<span>HTML • CSS • JavaScript</span>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section alternate">
+<h2>Contact Me</h2>
+<p class="section-text">Have a project or opportunity to discuss? Send me a message.</p>
+
+<form id="contactForm" action="contact.php" method="POST">
+<input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+ 
+
+<input type="text" name="subject" placeholder="Subject" aria-label="Subject" required>
+<textarea name="message" placeholder="Your Message"
+aria-label="Your Message" rows="5" required></textarea>
+<button type="submit" class="btn">Send Message</button>
+<p id="formMessage" role="status"></p>
+</form>
+</section>
+</main>
+
+<footer>
+<p>© <span id="year"></span> Your Name. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
